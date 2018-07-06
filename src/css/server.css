@@ -1,0 +1,67 @@
+
+/*Eigenes*/
+
+.message-symbol {
+
+    font-size: 2em;
+    color:#343A40;
+    width:5em;
+}
+
+.navbar-sub{
+
+    background-color:crimson;
+
+}
+/*Boostrap Anpassungen*/
+.btn-primary {
+    color: #fff;
+    background-color: crimson;
+    border-color: crimson;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #b41438;
+    border-color: #b41438;
+}
+
+a {
+    color: crimson;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+    color: crimson;
+    color: #b41438;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.nav-underline .nav-link:hover {
+    color: #b41438;
+}
+
+.nav-underline .nav-link {
+    color: white;
+}
+
+.btn-outline-success {
+    color: crimson !important;
+    background-color: transparent;
+    background-image: none;
+    border-color: #b41438 !important;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: crimson;
+    border-color: #b41438;
+}
+
+.btn-outline-success.focus, .btn-outline-success:focus {
+    box-shadow: 0 0 0 0.2rem rgba(180, 20, 56, 0.5) !important;
+}
