@@ -90,9 +90,19 @@
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
         <a href="#">
-            <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="ml-2 mr-2 rounded">
-            <span class="text-light">Username</span>
-            <small class="text-light">Role</small>
+            <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt=""
+                 class="ml-4 mt-1 rounded float-left">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col align-self-end">
+                        <span class="text-light">@Username</span>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col align-self-end" style="margin-top: -0.5em;">
+                        <small class="text-light">Role</small>
+                    </div>
+                </div>
+            </div>
         </a>
     </div>
 </nav>
@@ -192,85 +202,141 @@
                         </a>
                     </li>
                 </ul>
-                <div id="livedata"></div>
+
+                <div id="livedata" class="mb-2"></div>
+                <script type="text/javascript">
+
+                    Highcharts.setOptions({
+                        global: {
+                            useUTC: false
+                        }
+                    });
+
+                    Highcharts.chart('livedata', {
+                        chart: {
+                            type: 'spline',
+                            animation: Highcharts.svg, // don't animate in old IE
+                            marginRight: 10,
+                            events: {
+                                load: function () {
+
+                                    // set up the updating of the chart each second
+                                    var series = this.series[0];
+                                    setInterval(function () {
+                                        var x = (new Date()).getTime(), // current time
+                                            y = Math.random();
+                                        series.addPoint([x, y], true, true);
+                                    }, 1000);
+                                }
+                            }
+                        },
+                        title: {
+                            text: 'Live random data'
+                        },
+                        xAxis: {
+                            type: 'datetime',
+                            tickPixelInterval: 150
+                        },
+                        yAxis: {
+                            title: {
+                                text: 'Value'
+                            },
+                            plotLines: [{
+                                value: 0,
+                                width: 1,
+                                color: '#808080'
+                            }]
+                        },
+                        tooltip: {
+                            formatter: function () {
+                                return '<b>' + this.series.name + '</b><br/>' +
+                                    Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' +
+                                    Highcharts.numberFormat(this.y, 2);
+                            }
+                        },
+                        legend: {
+                            enabled: false
+                        },
+                        exporting: {
+                            enabled: false
+                        },
+                        series: [{
+                            name: 'Random data',
+                            data: (function () {
+                                // generate an array of random data
+                                var data = [],
+                                    time = (new Date()).getTime(),
+                                    i;
+
+                                for (i = -19; i <= 0; i += 1) {
+                                    data.push({
+                                        x: time + i * 1000,
+                                        y: Math.random()
+                                    });
+                                }
+                                return data;
+                            }())
+                        }]
+                    });
+                </script>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary mb-2" data-toggle="modal"
+                        data-target="#exampleModalCenter">
+                    Launch demo modal
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-signin">
+                                    <div class="text-center mb-4">
+                                        <img class="mb-4"
+                                             src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt=""
+                                             width="72" height="72">
+                                        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+                                        <p>Use your <code>Company-Email-Address</code></p>
+                                    </div>
+
+                                    <div class="form-label-group">
+                                        <input type="email" id="inputEmail" class="form-control"
+                                               placeholder="Email address" required="" autofocus="">
+                                        <label for="inputEmail">Email address</label>
+                                    </div>
+
+                                    <div class="form-label-group">
+                                        <input type="password" id="inputPassword" class="form-control"
+                                               placeholder="Password" required="">
+                                        <label for="inputPassword">Password</label>
+                                    </div>
+
+                                    <div class="checkbox mb-3">
+                                        <label>
+                                            <input type="checkbox" value="remember-me"> Remember me
+                                        </label>
+                                    </div>
+                                    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </nav>
-
-        <script type="text/javascript">
-
-            Highcharts.setOptions({
-                global: {
-                    useUTC: false
-                }
-            });
-
-            Highcharts.chart('livedata', {
-                chart: {
-                    type: 'spline',
-                    animation: Highcharts.svg, // don't animate in old IE
-                    marginRight: 10,
-                    events: {
-                        load: function () {
-
-                            // set up the updating of the chart each second
-                            var series = this.series[0];
-                            setInterval(function () {
-                                var x = (new Date()).getTime(), // current time
-                                    y = Math.random();
-                                series.addPoint([x, y], true, true);
-                            }, 1000);
-                        }
-                    }
-                },
-                title: {
-                    text: 'Live random data'
-                },
-                xAxis: {
-                    type: 'datetime',
-                    tickPixelInterval: 150
-                },
-                yAxis: {
-                    title: {
-                        text: 'Value'
-                    },
-                    plotLines: [{
-                        value: 0,
-                        width: 1,
-                        color: '#808080'
-                    }]
-                },
-                tooltip: {
-                    formatter: function () {
-                        return '<b>' + this.series.name + '</b><br/>' +
-                            Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' +
-                            Highcharts.numberFormat(this.y, 2);
-                    }
-                },
-                legend: {
-                    enabled: false
-                },
-                exporting: {
-                    enabled: false
-                },
-                series: [{
-                    name: 'Random data',
-                    data: (function () {
-                        // generate an array of random data
-                        var data = [],
-                            time = (new Date()).getTime(),
-                            i;
-
-                        for (i = -19; i <= 0; i += 1) {
-                            data.push({
-                                x: time + i * 1000,
-                                y: Math.random()
-                            });
-                        }
-                        return data;
-                    }())
-                }]
-            });
-        </script>
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
 
