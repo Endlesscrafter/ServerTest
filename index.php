@@ -1,5 +1,10 @@
+<!doctype html>
+
+<html lang="de">
 <?php
 
-include("static/index.html");
+include("static/header.html");
+include("static/body.html");
 
 ?>
+</html>
