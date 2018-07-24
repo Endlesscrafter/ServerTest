@@ -14,6 +14,9 @@
     <?php include("site-content.php") ?>
 
     <?php include("site-footer.php") ?>
+
 </wrapper>
+
 <?php include("footer.php") ?>
+
 </body>
