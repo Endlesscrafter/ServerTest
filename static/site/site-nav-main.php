@@ -42,7 +42,7 @@
                     </div>
                     <div class="w-100"></div>
                     <div class="col align-self-end" style="margin-top: -0.5em;">
-                        <small class="text-light"><span class="badge badge-primary">Role</span></small>
+                        <small class="text-light"><span class="badge badge-primary badge-admin">Role</span></small>
                     </div>
                 </div>
             </div>

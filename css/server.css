@@ -17,6 +17,19 @@ body, wrapper {
 
 }
 
+
+/*Neue Badge-Farben*/
+.badge-admin {
+    color: #fff;
+    background-color: #b41438;
+}
+
+.badge-admin[href]:hover, .badge-admin[href]:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: crimson;
+}
+
 /*Boostrap Anpassungen*/
 .btn-primary {
     color: #fff;
