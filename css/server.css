@@ -21,13 +21,35 @@ body, wrapper {
 /*Neue Badge-Farben*/
 .badge-admin {
     color: #fff;
-    background-color: #b41438;
+    background-color: crimson;
 }
 
 .badge-admin[href]:hover, .badge-admin[href]:focus {
     color: #fff;
     text-decoration: none;
-    background-color: crimson;
+    background-color: #b41438;
+}
+
+.badge-moderator {
+    color: #fff;
+    background-color: orange;
+}
+
+.badge-moderator[href]:hover, .badge-moderator[href]:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: darkorange;
+}
+
+.badge-user {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.badge-user[href]:hover, .badge-user[href]:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #0062cc;
 }
 
 /*Boostrap Anpassungen*/

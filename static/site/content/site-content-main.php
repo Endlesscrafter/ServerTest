@@ -269,7 +269,7 @@
                  class="mr-2 rounded">
             <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                 <div class="d-flex justify-content-between align-items-center w-100">
-                    <strong class="text-gray-dark">Full Name <span class="badge badge-primary badge-admin">Admin</span></strong>
+                    <strong class="text-gray-dark">Full Name <span class="badge badge-primary badge-moderator">Admin</span></strong>
                     <a href="#">Follow</a>
                 </div>
                 <span class="d-block">@username</span>
@@ -280,7 +280,7 @@
                  class="mr-2 rounded">
             <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                 <div class="d-flex justify-content-between align-items-center w-100">
-                    <strong class="text-gray-dark">Full Name <span class="badge badge-primary badge-admin">Admin</span></strong>
+                    <strong class="text-gray-dark">Full Name <span class="badge badge-primary badge-user">Admin</span></strong>
                     <a href="#">Follow</a>
                 </div>
                 <span class="d-block">@username</span>
