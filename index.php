@@ -3,8 +3,8 @@
 <html lang="de">
 <?php
 
-include("static/header.html");
-include("static/body.html");
+include("static/header.php");
+include("static/body.php");
 
 ?>
 </html>
