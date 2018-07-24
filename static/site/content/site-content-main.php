@@ -95,7 +95,7 @@
 
     <!--Test POST-->
     <form action="test-python.php" method="post">
-        <button type="submit" class="btn btn-primary">Test Python</button>
+        <button type="submit" class="btn btn-primary" name="testpy">Test Python</button>
     </form>
 
     <div id="chart" class="d-flex pt-3"></div>
