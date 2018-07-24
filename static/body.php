@@ -7,13 +7,13 @@
 
 <wrapper class="d-flex flex-column">
 
-    <?php include("site-nav-main.php") ?>
+    <?php include("site/site-nav-main.php") ?>
 
-    <?php include("site-nav-sub.php") ?>
+    <?php include("site/site-nav-sub.php") ?>
 
-    <?php include("site-content.php") ?>
+    <?php include("site/site-content.php") ?>
 
-    <?php include("site-footer.php") ?>
+    <?php include("site/site-footer.php") ?>
 
 </wrapper>
 
