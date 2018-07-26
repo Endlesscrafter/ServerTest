@@ -93,13 +93,23 @@
 
     <h3 class="border-bottom">Section title</h3>
 
-    <!--Test POST-->
-    <form action="test-python.php" method="post">
-        <button type="submit" class="btn btn-primary" name="testpy">Test Python</button>
-    </form>
+    <!--Rolladen POSTs-->
+    <div class="row my-3 p-3 bg-white rounded box-shadow">
+        <form action="steuerung.php" method="post" class="m-3">
+            <button type="submit" class="btn btn-primary" name="rauf">Rolladen hoch</button>
+        </form>
 
-    <div id="chart" class="d-flex pt-3"></div>
+        <form action="steuerung.php" method="post" class="m-3">
+            <button type="submit" class="btn btn-primary" name="runter">Rolladen runter</button>
+        </form>
 
+        <form action="test-python.php" method="post" class="m-3">
+            <button type="submit" class="btn btn-primary" name="testpy">Test Python</button>
+        </form>
+    </div>
+
+    <!--Das ist ein Highcharts Diagramm-->
+    <!--<div id="chart" class="d-flex pt-3"></div>
     <script type="text/javascript">
 
         $.getJSON(
@@ -168,9 +178,10 @@
                 });
             }
         );
-    </script>
+    </script>-->
 
-    <div class="d-flex table-responsive pt-3">
+    <!--Tabelle-->
+    <!--<div class="d-flex table-responsive pt-3">
         <table class="table table-striped table-sm">
             <thead>
             <tr>
@@ -212,9 +223,10 @@
             </tr>
             </tbody>
         </table>
-    </div>
+    </div>-->
 
-    <div class="my-3 p-3 bg-white rounded box-shadow">
+    <!--Ein Feed, hier mit Nutzernamen-->
+    <!--<div class="my-3 p-3 bg-white rounded box-shadow">
         <h6 class="border-bottom border-gray pb-2 mb-0">Recent updates</h6>
         <div class="media text-muted pt-3">
             <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt=""
@@ -249,9 +261,10 @@
         <small class="d-block text-right mt-3">
             <a href="#">All updates</a>
         </small>
-    </div>
+    </div>-->
 
-    <div class="my-3 p-3 bg-white rounded box-shadow">
+    <!--Eine andere form von Feed/Liste, Fokus auf Items/Benutzer-->
+    <!--<div class="my-3 p-3 bg-white rounded box-shadow">
         <h6 class="border-bottom border-gray pb-2 mb-0">Suggestions</h6>
         <div class="media text-muted pt-3">
             <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt=""
@@ -269,7 +282,8 @@
                  class="mr-2 rounded">
             <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                 <div class="d-flex justify-content-between align-items-center w-100">
-                    <strong class="text-gray-dark">Full Name <span class="badge badge-primary badge-moderator">Moderator</span></strong>
+                    <strong class="text-gray-dark">Full Name <span
+                                class="badge badge-primary badge-moderator">Moderator</span></strong>
                     <a href="#">Follow</a>
                 </div>
                 <span class="d-block">@username</span>
@@ -280,7 +294,8 @@
                  class="mr-2 rounded">
             <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                 <div class="d-flex justify-content-between align-items-center w-100">
-                    <strong class="text-gray-dark">Full Name <span class="badge badge-primary badge-user">User</span></strong>
+                    <strong class="text-gray-dark">Full Name <span
+                                class="badge badge-primary badge-user">User</span></strong>
                     <a href="#">Follow</a>
                 </div>
                 <span class="d-block">@username</span>
@@ -289,5 +304,5 @@
         <small class="d-block text-right mt-3">
             <a href="#">All suggestions</a>
         </small>
-    </div>
+    </div>-->
 </main>

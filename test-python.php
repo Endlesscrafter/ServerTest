@@ -1,4 +1,6 @@
 <?php
 if (isset($_POST['testpy'])) {
-    exec('/usr/bin/python3 python_test.py ');
+    exec('sudo /usr/bin/python3 python_test.py ');
+    header("Location: http://192.168.17.155/");
+    die();
 }

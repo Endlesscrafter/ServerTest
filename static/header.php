@@ -21,7 +21,8 @@
 
     <link rel="stylesheet" href="../css/server.css">
 
-    <script>
+    <!--Blendet die Fehlermeldungen ein-->
+    <!--<script>
         $(document).ready(function () {
 
 
@@ -43,6 +44,6 @@
             $(".date-today").html(today.toISOString());
 
         });
-    </script>
+    </script>-->
 
 </head>
