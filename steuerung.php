@@ -6,8 +6,12 @@
  * Time: 12:54
  */
 if (isset($_POST['rauf'])) {
-    exec('sudo /usr/bin/python3 python_test.py ');
+    exec('sudo /usr/bin/python3 rauf.py ');
+    header("Location: http://192.168.17.155/");
+    die();
 }
 if (isset($_POST['runter'])) {
-    exec('sudo /usr/bin/python3 python_test.py ');
+    exec('sudo /usr/bin/python3 runter.py ');
+    header("Location: http://192.168.17.155/");
+    die();
 }

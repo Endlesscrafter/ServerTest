@@ -94,13 +94,19 @@
     <h3 class="border-bottom">Section title</h3>
 
     <!--Test POST-->
-    <form action="test-python.php" method="post">
-        <button type="submit" class="btn btn-primary" name="testpy">Test Python</button>
-    </form>
+    <div class="row">
+        <form action="test-python.php" method="post">
+            <button type="submit" class="btn btn-primary" name="testpy">Test Python</button>
+        </form>
 
-    <form action="steuerung.php" method="post">
-        <button type="submit" class="btn btn-primary" name="rauf">Rolladen hoch</button>
-    </form>
+        <form action="steuerung.php" method="post">
+            <button type="submit" class="btn btn-primary" name="rauf">Rolladen hoch</button>
+        </form>
+
+        <form action="steuerung.php" method="post">
+            <button type="submit" class="btn btn-primary" name="runter">Rolladen runter</button>
+        </form>
+    </div>
 
     <div id="chart" class="d-flex pt-3"></div>
 
@@ -273,7 +279,8 @@
                  class="mr-2 rounded">
             <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                 <div class="d-flex justify-content-between align-items-center w-100">
-                    <strong class="text-gray-dark">Full Name <span class="badge badge-primary badge-moderator">Moderator</span></strong>
+                    <strong class="text-gray-dark">Full Name <span
+                                class="badge badge-primary badge-moderator">Moderator</span></strong>
                     <a href="#">Follow</a>
                 </div>
                 <span class="d-block">@username</span>
@@ -284,7 +291,8 @@
                  class="mr-2 rounded">
             <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                 <div class="d-flex justify-content-between align-items-center w-100">
-                    <strong class="text-gray-dark">Full Name <span class="badge badge-primary badge-user">User</span></strong>
+                    <strong class="text-gray-dark">Full Name <span
+                                class="badge badge-primary badge-user">User</span></strong>
                     <a href="#">Follow</a>
                 </div>
                 <span class="d-block">@username</span>
