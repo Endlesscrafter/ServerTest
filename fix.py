@@ -8,8 +8,8 @@ import logging
 #Der 'state' kann die folgenden Werte annehmen:
 #OPEN (Komplett hochgefahren)
 #CLOSED (Nach unten gefahren, aber die Schlitze sind auf)
-#SHUT (Komplett geschlossen),
-#LIGHT (Kleiner Spalt lässt Licht rein),
+#SHUT (Komplett geschlossen)
+#LIGHT (Kleiner Spalt lässt Licht rein)
 #HALF (Hälfte verdeckt)
 
 logging.basicConfig(filename='rolladen.log',level=logging.DEBUG)
