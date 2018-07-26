@@ -95,6 +95,7 @@
 
     <!--Rolladen POSTs-->
     <div class="row my-3 p-3 bg-white rounded box-shadow">
+
         <form action="steuerung.php" method="post" class="m-3">
             <button type="submit" class="btn btn-primary" name="rauf">Rolladen hoch</button>
         </form>
@@ -110,6 +111,7 @@
         <!--<form action="test-python.php" method="post" class="m-3">
             <button type="submit" class="btn btn-primary" name="testpy">Test Python</button>
         </form>-->
+
     </div>
 
     <!--Das ist ein Highcharts Diagramm-->
