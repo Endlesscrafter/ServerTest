@@ -16,6 +16,8 @@ up = LED(17)
 down = LED(22)
 #I2C freilassen für etwaigen Arduino für Temperatur etc
 
+data = {"state": "OPEN"}
+
 with open('rolladen.json', 'w') as objectfile:
     json.dump(data, objectfile)
     #Tatsächliches Hochfahren
