@@ -108,8 +108,8 @@
         </form>
     </div>
 
-    <div id="chart" class="d-flex pt-3"></div>
-
+    <!--Das ist ein Highcharts Diagramm-->
+    <!--<div id="chart" class="d-flex pt-3"></div>
     <script type="text/javascript">
 
         $.getJSON(
@@ -178,9 +178,10 @@
                 });
             }
         );
-    </script>
+    </script>-->
 
-    <div class="d-flex table-responsive pt-3">
+    <!--Tabelle-->
+    <!--<div class="d-flex table-responsive pt-3">
         <table class="table table-striped table-sm">
             <thead>
             <tr>
@@ -222,9 +223,10 @@
             </tr>
             </tbody>
         </table>
-    </div>
+    </div>-->
 
-    <div class="my-3 p-3 bg-white rounded box-shadow">
+    <!--Ein Feed, hier mit Nutzernamen-->
+    <!--<div class="my-3 p-3 bg-white rounded box-shadow">
         <h6 class="border-bottom border-gray pb-2 mb-0">Recent updates</h6>
         <div class="media text-muted pt-3">
             <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt=""
@@ -259,9 +261,10 @@
         <small class="d-block text-right mt-3">
             <a href="#">All updates</a>
         </small>
-    </div>
+    </div>-->
 
-    <div class="my-3 p-3 bg-white rounded box-shadow">
+    <!--Eine andere form von Feed/Liste, Fokus auf Items/Benutzer-->
+    <!--<div class="my-3 p-3 bg-white rounded box-shadow">
         <h6 class="border-bottom border-gray pb-2 mb-0">Suggestions</h6>
         <div class="media text-muted pt-3">
             <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt=""
@@ -301,5 +304,5 @@
         <small class="d-block text-right mt-3">
             <a href="#">All suggestions</a>
         </small>
-    </div>
+    </div>-->
 </main>
