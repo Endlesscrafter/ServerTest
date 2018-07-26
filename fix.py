@@ -25,7 +25,7 @@ logging.debug('Definiere Daten')
 data = {"state": "OPEN"}
 
 with open('rolladen.json', 'w') as objectfile:
-    logging.info('Status wird überschrieben: ' + data)
+    logging.info('Status wird überschrieben: ' + json.dump(dict))
     json.dump(data, objectfile)
     #Tatsächliches Hochfahren
     logging.debug('Beginne Hochfahren...')
