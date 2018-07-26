@@ -16,10 +16,12 @@ logging.basicConfig(filename='rolladen.log',level=logging.DEBUG)
 logging.debug('Start fix.py')
 
 #Definiere Ports
+logging.debug('Definiere Ports')
 up = LED(17)
 down = LED(22)
 #I2C freilassen für etwaigen Arduino für Temperatur etc
 
+logging.debug('Definiere Daten')
 data = {"state": "OPEN"}
 
 with open('rolladen.json', 'w') as objectfile:
