@@ -98,6 +98,10 @@
         <button type="submit" class="btn btn-primary" name="testpy">Test Python</button>
     </form>
 
+    <form action="steuerung.php" method="post">
+        <button type="submit" class="btn btn-primary" name="rauf">Rolladen hoch</button>
+    </form>
+
     <div id="chart" class="d-flex pt-3"></div>
 
     <script type="text/javascript">
