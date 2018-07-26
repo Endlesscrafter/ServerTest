@@ -94,7 +94,7 @@
     <h3 class="border-bottom">Section title</h3>
 
     <!--Test POST-->
-    <div class="row">
+    <div class="row my-3 p-3 bg-white rounded box-shadow">
         <form action="test-python.php" method="post">
             <button type="submit" class="btn btn-primary" name="testpy">Test Python</button>
         </form>
