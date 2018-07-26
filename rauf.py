@@ -13,3 +13,11 @@ import json
 
 with open("rolladen.json","r") as objectfile:
 	data = json.load(objectfile)
+	#Ist jetzt vom typ python-dictionary
+
+
+if data['state'] != "OPEN":
+    data['state'] = "OPEN"
+    with open('rolladen.json', 'w') as objectfile:
+        json.dump(data, objectfile)
+    #Tatsächliches Hochfahren
