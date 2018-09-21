@@ -1,3 +1,4 @@
+<!--header.php/-->
 <head>
     <meta charset="utf-8">
 
@@ -47,3 +48,4 @@
     </script>-->
 
 </head>
+<!--/header.php-->

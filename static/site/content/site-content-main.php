@@ -270,7 +270,7 @@
     </div>-->
 
     <!--Eine andere form von Feed/Liste, Fokus auf Items/Benutzer-->
-    <!--<div class="my-3 p-3 bg-white rounded box-shadow">
+    <div class="my-3 p-3 bg-white rounded box-shadow">
         <h6 class="border-bottom border-gray pb-2 mb-0">Suggestions</h6>
         <div class="media text-muted pt-3">
             <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt=""
@@ -310,5 +310,5 @@
         <small class="d-block text-right mt-3">
             <a href="#">All suggestions</a>
         </small>
-    </div>-->
+    </div>
 </main>

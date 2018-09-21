@@ -1,3 +1,4 @@
+<!--body.php/-->
 <body>
 
 <!-- Additional files for the Highslide popup effect -->
@@ -20,3 +21,4 @@
 <?php include("footer.php") ?>
 
 </body>
+<!--/footer.php-->
