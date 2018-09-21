@@ -109,6 +109,28 @@ body, wrapper {
     background-color: lightsteelblue;
 }
 
+.badge-earth {
+    color: #fff;
+    background-color: forestgreen;
+}
+
+.badge-earth[href]:hover, .badge-earth[href]:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: darkgreen;
+}
+
+.badge-air {
+    color: #343A40;
+    background-color: whitesmoke;
+}
+
+.badge-air[href]:hover, .badge-air[href]:focus {
+    color: #343A40;
+    text-decoration: none;
+    background-color: #e5e5e5;
+}
+
 .badge-fire {
     color: #fff;
     background-color: #ff4726;
