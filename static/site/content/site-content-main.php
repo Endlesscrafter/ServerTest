@@ -94,7 +94,8 @@
     <h3 class="border-bottom">Section title</h3>
 
     <!--Rolladen POSTs-->
-    <div class="row my-3 p-3 bg-white rounded box-shadow">
+    <div class="my-3 p-3 bg-white rounded box-shadow">
+        row my-3 p-3 bg-white rounded box-shadow
 
         <form action="steuerung.php" method="post" class="m-3">
             <button type="submit" class="btn btn-primary" name="rauf">Rolladen hoch</button>
