@@ -41,6 +41,17 @@ body, wrapper {
     background-color: darkorange;
 }
 
+.badge-protector {
+    color: #fff;
+    background-color: lightseagreen;
+}
+
+.badge-protector[href]:hover, .badge-protector[href]:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: seagreen;
+}
+
 .badge-user {
     color: #fff;
     background-color: #007bff;
