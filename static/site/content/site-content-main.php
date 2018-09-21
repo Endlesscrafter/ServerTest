@@ -344,7 +344,7 @@
             <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                 <div class="d-flex justify-content-between align-items-center w-100">
                     <strong class="text-gray-dark">Full Name
-                        <span class="badge badge-primary badge-hot">Hot <i class="fab fa-hotjar"></i></span>
+                        <span class="badge badge-primary badge-fire">Fire <i class="fab fa-hotjar"></i></span>
                         <span class="badge badge-primary badge-supporter">Supporter <i
                                     class="fas fa-user-tie"></i></span></strong>
                     <a href="#">Follow</a>
@@ -358,7 +358,7 @@
             <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                 <div class="d-flex justify-content-between align-items-center w-100">
                     <strong class="text-gray-dark">Full Name
-                        <span class="badge badge-primary badge-cold">Cold <i
+                        <span class="badge badge-primary badge-ice">Ice <i
                                     class="fas fa-snowflake"></i></span>
                         <span class="badge badge-primary badge-user">User <i
                                     class="fas fa-user"></i></span></strong>

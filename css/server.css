@@ -98,23 +98,23 @@ body, wrapper {
 
 /*Additional Badges*/
 
-.badge-cold {
+.badge-ice {
     color: #343A40;
     background-color: aliceblue;
 }
 
-.badge-cold[href]:hover, .badge-cold[href]:focus {
+.badge-ice[href]:hover, .badge-ice[href]:focus {
     color: #343A40;
     text-decoration: none;
     background-color: lightsteelblue;
 }
 
-.badge-hot {
+.badge-fire {
     color: #fff;
     background-color: #ff4726;
 }
 
-.badge-hot[href]:hover, .badge-hot[href]:focus {
+.badge-fire[href]:hover, .badge-fire[href]:focus {
     color: #fff;
     text-decoration: none;
     background-color: #d13e22;
