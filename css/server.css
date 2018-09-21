@@ -99,12 +99,12 @@ body, wrapper {
 /*Additional Badges*/
 
 .badge-cold {
-    color: #fff;
+    color: #343A40;
     background-color: aliceblue;
 }
 
 .badge-cold[href]:hover, .badge-cold[href]:focus {
-    color: #fff;
+    color: #343A40;
     text-decoration: none;
     background-color: lightsteelblue;
 }
