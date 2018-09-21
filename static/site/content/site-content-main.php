@@ -317,7 +317,43 @@
             <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                 <div class="d-flex justify-content-between align-items-center w-100">
                     <strong class="text-gray-dark">Full Name <span
-                                class="badge badge-primary badge-user">User</span></strong>
+                                class="badge badge-primary badge-spy">Spy <i class="fas fa-user-secret"></i></span></strong>
+                    <a href="#">Follow</a>
+                </div>
+                <span class="d-block">@username</span>
+            </div>
+        </div>
+        <div class="media text-muted pt-3">
+            <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt=""
+                 class="mr-2 rounded">
+            <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <strong class="text-gray-dark">Full Name <span
+                                class="badge badge-primary badge-ninja">Ninja <i class="fas fa-user-ninja"></i></span></strong>
+                    <a href="#">Follow</a>
+                </div>
+                <span class="d-block">@username</span>
+            </div>
+        </div>
+        <div class="media text-muted pt-3">
+            <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt=""
+                 class="mr-2 rounded">
+            <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <strong class="text-gray-dark">Full Name <span
+                                class="badge badge-primary badge-supporter">Supporter <i class="fas fa-user-tie"></i></span></strong>
+                    <a href="#">Follow</a>
+                </div>
+                <span class="d-block">@username</span>
+            </div>
+        </div>
+        <div class="media text-muted pt-3">
+            <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt=""
+                 class="mr-2 rounded">
+            <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <strong class="text-gray-dark">Full Name <span
+                                class="badge badge-primary badge-user">User <i class="fas fa-user"></i></span></strong>
                     <a href="#">Follow</a>
                 </div>
                 <span class="d-block">@username</span>

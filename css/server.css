@@ -52,6 +52,39 @@ body, wrapper {
     background-color: seagreen;
 }
 
+.badge-spy{
+    color: #fff;
+    background-color: slategray;
+}
+
+.badge-spy[href]:hover, .badge-spy[href]:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: darkslategray;
+}
+
+.badge-ninja{
+    color: #fff;
+    background-color: darkviolet;
+}
+
+.badge-ninja[href]:hover, .badge-ninja[href]:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: indigo;
+}
+
+.badge-supporter{
+    color: #fff;
+    background-color: gold;
+}
+
+.badge-supporter[href]:hover, .badge-supporter[href]:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: goldenrod;
+}
+
 .badge-user {
     color: #fff;
     background-color: #007bff;
