@@ -15,3 +15,8 @@ if (isset($_POST['runter'])) {
     header("Location: http://192.168.17.155/");
     die();
 }
+if (isset($_POST['fix'])) {
+    exec('sudo /usr/bin/python3 fix.py ');
+    header("Location: http://192.168.17.155/");
+    die();
+}
